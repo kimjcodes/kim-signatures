@@ -42,6 +42,7 @@
             cursor: pointer;
         }
         button:hover { background: #d4a50a; }
+        button:disabled { background: #555; cursor: wait; }
         .result {
             margin-top: 20px;
             padding: 15px;
@@ -51,6 +52,7 @@
         }
         .valid { background: #238636; color: #fff; }
         .invalid { background: #da3633; color: #fff; }
+        .pending { background: #1f6feb; color: #fff; }
         .info { 
             margin-top: 30px; 
             padding: 15px; 
@@ -61,34 +63,49 @@
         }
         .info a { color: #58a6ff; }
         .prefilled { background: #1c2128; border-color: #f0b90b; }
+        .how-it-works {
+            margin-top: 20px;
+            padding: 15px;
+            background: #161b22;
+            border-radius: 6px;
+            border-left: 3px solid #f0b90b;
+        }
+        .how-it-works h3 { margin-top: 0; color: #f0b90b; }
+        code { background: #0d1117; padding: 2px 6px; border-radius: 3px; }
     </style>
 </head>
 <body>
     <h1>🔑 Verify Kim's Signature</h1>
-    <p class="subtitle">Cryptographic proof that a message was signed by Kim</p>
+    <p class="subtitle">Real cryptographic verification — no trust required</p>
     
     <label>Bitcoin Address</label>
     <input type="text" id="address" value="1LU67hyXTEZGg38PMvKo4q5sLJ13z3CVL1" readonly>
     
     <label>Message</label>
-    <input type="text" id="message" placeholder="Kim YY-MM-DD">
+    <input type="text" id="message" placeholder="Kim YY-MM-DD (e.g., Kim 26-02-09)">
     
     <label>Signature</label>
-    <textarea id="signature" placeholder="Full base64 signature"></textarea>
+    <textarea id="signature" placeholder="Full base64 signature from GitHub repo"></textarea>
     
-    <button onclick="verify()">Verify Signature</button>
+    <button id="verifyBtn" onclick="verify()">Verify Signature</button>
     
     <div id="result"></div>
     
-    <div class="info">
-        <strong>How it works:</strong><br><br>
-        Kim signs a message each day using a Bitcoin private key. Only someone with that private key can create a valid signature.<br><br>
-        <strong>Find signatures:</strong> <a href="https://github.com/kimjcodes/kim-signatures">github.com/kimjcodes/kim-signatures</a><br>
-        <strong>Twitter:</strong> <a href="https://x.com/KimJBTC">@KimJBTC</a>
+    <div class="how-it-works">
+        <h3>🔐 How This Works</h3>
+        <p>This page performs <strong>real ECDSA signature verification</strong> in your browser using the secp256k1 curve — the same cryptography Bitcoin uses.</p>
+        <p>No server. No trust. Pure math. The signature can only be valid if created by someone who controls the private key for address <code>1LU67...CVL1</code>.</p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-message@2.2.0/index.min.js"></script>
-    <script>
+    <div class="info">
+        <strong>Find signatures:</strong> <a href="https://github.com/kimjcodes/kim-signatures">github.com/kimjcodes/kim-signatures</a><br><br>
+        <strong>Twitter:</strong> <a href="https://x.com/KimJBTC">@KimJBTC</a><br><br>
+        <strong>Alternative verifier:</strong> <a href="https://www.bitcoin.com/tools/verify-message/">bitcoin.com</a>
+    </div>
+
+    <script type="module">
+        import verify from 'https://cdn.skypack.dev/verify-bitcoin-message';
+        
         // Parse URL parameters
         const params = new URLSearchParams(window.location.search);
         
@@ -104,35 +121,47 @@
             document.getElementById('address').value = params.get('address');
         }
         
-        // Auto-verify if all fields are filled from URL
-        if (params.get('message') && (params.get('signature') || params.get('sig'))) {
-            setTimeout(verify, 500);
-        }
-
-        function verify() {
+        // Make verify function global
+        window.verify = async function() {
             const address = document.getElementById('address').value.trim();
             const message = document.getElementById('message').value.trim();
             const signature = document.getElementById('signature').value.trim();
             const resultDiv = document.getElementById('result');
+            const btn = document.getElementById('verifyBtn');
             
             if (!message || !signature) {
-                resultDiv.innerHTML = '<div class="result invalid">Please fill in all fields</div>';
+                resultDiv.innerHTML = '<div class="result invalid">Please fill in message and signature</div>';
                 return;
             }
             
+            btn.disabled = true;
+            btn.textContent = 'Verifying...';
+            resultDiv.innerHTML = '<div class="result pending">⏳ Computing ECDSA verification...</div>';
+            
             try {
-                // Use bitcoinjs-message to verify
-                const isValid = bitcoinMessage.verify(message, address, signature);
+                const isValid = await verify({
+                    address: address,
+                    message: message,
+                    signature: signature
+                });
                 
                 if (isValid) {
-                    resultDiv.innerHTML = '<div class="result valid">✅ SIGNATURE VALID<br><small>This message was signed by Kim</small></div>';
+                    resultDiv.innerHTML = '<div class="result valid">✅ SIGNATURE VALID<br><small>Cryptographically proven: this message was signed by Kim</small></div>';
                 } else {
-                    resultDiv.innerHTML = '<div class="result invalid">❌ SIGNATURE INVALID<br><small>This signature does not match</small></div>';
+                    resultDiv.innerHTML = '<div class="result invalid">❌ SIGNATURE INVALID<br><small>The signature does not match this message/address</small></div>';
                 }
             } catch (e) {
-                // Fallback: redirect to bitcoin.com
-                resultDiv.innerHTML = `<div class="result invalid">Verification error. <a href="https://www.bitcoin.com/tools/verify-message/" target="_blank" style="color:#fff">Try bitcoin.com →</a></div>`;
+                console.error(e);
+                resultDiv.innerHTML = `<div class="result invalid">❌ Verification failed: ${e.message}<br><small><a href="https://www.bitcoin.com/tools/verify-message/" target="_blank" style="color:#fff">Try bitcoin.com instead →</a></small></div>`;
             }
+            
+            btn.disabled = false;
+            btn.textContent = 'Verify Signature';
+        }
+        
+        // Auto-verify if all fields are filled from URL
+        if (params.get('message') && (params.get('signature') || params.get('sig'))) {
+            setTimeout(window.verify, 1000);
         }
     </script>
 </body>
