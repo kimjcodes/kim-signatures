@@ -1,0 +1,13 @@
+{
+  "signer": "KimJBTC",
+  "address": "1LU67hyXTEZGg38PMvKo4q5sLJ13z3CVL1",
+  "messageFormat": "Kim YY-MM-DD",
+  "signatures": {
+    "2026-02-09": {
+      "message": "Kim 26-02-09",
+      "signature": "IO/ZW9UvT1ShTqLdUEeb7eQak2KU21zcEpp6UX9B5S0ENH4rinmA07LfoX3o4sOlabkDjXYJhNBb8kd/PcPog9k=",
+      "short": "IO/ZW...og9k=",
+      "platforms": ["skool", "twitter"]
+    }
+  }
+}
