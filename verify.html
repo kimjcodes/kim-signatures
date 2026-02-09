@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Kim's Signature</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+        h1 { color: #f0b90b; text-align: center; }
+        .subtitle { text-align: center; color: #8b949e; margin-bottom: 30px; }
+        label { display: block; margin-top: 15px; color: #8b949e; font-size: 14px; }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #c9d1d9;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        textarea { height: 80px; resize: vertical; }
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            background: #f0b90b;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover { background: #d4a50a; }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .valid { background: #238636; color: #fff; }
+        .invalid { background: #da3633; color: #fff; }
+        .info { 
+            margin-top: 30px; 
+            padding: 15px; 
+            background: #161b22; 
+            border-radius: 6px;
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .info a { color: #58a6ff; }
+        .prefilled { background: #1c2128; border-color: #f0b90b; }
+    </style>
+</head>
+<body>
+    <h1>🔑 Verify Kim's Signature</h1>
+    <p class="subtitle">Cryptographic proof that a message was signed by Kim</p>
+    
+    <label>Bitcoin Address</label>
+    <input type="text" id="address" value="1LU67hyXTEZGg38PMvKo4q5sLJ13z3CVL1" readonly>
+    
+    <label>Message</label>
+    <input type="text" id="message" placeholder="Kim YY-MM-DD">
+    
+    <label>Signature</label>
+    <textarea id="signature" placeholder="Full base64 signature"></textarea>
+    
+    <button onclick="verify()">Verify Signature</button>
+    
+    <div id="result"></div>
+    
+    <div class="info">
+        <strong>How it works:</strong><br><br>
+        Kim signs a message each day using a Bitcoin private key. Only someone with that private key can create a valid signature.<br><br>
+        <strong>Find signatures:</strong> <a href="https://github.com/kimjcodes/kim-signatures">github.com/kimjcodes/kim-signatures</a><br>
+        <strong>Twitter:</strong> <a href="https://x.com/KimJBTC">@KimJBTC</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-message@2.2.0/index.min.js"></script>
+    <script>
+        // Parse URL parameters
+        const params = new URLSearchParams(window.location.search);
+        
+        if (params.get('message')) {
+            document.getElementById('message').value = params.get('message');
+            document.getElementById('message').classList.add('prefilled');
+        }
+        if (params.get('signature') || params.get('sig')) {
+            document.getElementById('signature').value = params.get('signature') || params.get('sig');
+            document.getElementById('signature').classList.add('prefilled');
+        }
+        if (params.get('address')) {
+            document.getElementById('address').value = params.get('address');
+        }
+        
+        // Auto-verify if all fields are filled from URL
+        if (params.get('message') && (params.get('signature') || params.get('sig'))) {
+            setTimeout(verify, 500);
+        }
+
+        function verify() {
+            const address = document.getElementById('address').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const signature = document.getElementById('signature').value.trim();
+            const resultDiv = document.getElementById('result');
+            
+            if (!message || !signature) {
+                resultDiv.innerHTML = '<div class="result invalid">Please fill in all fields</div>';
+                return;
+            }
+            
+            try {
+                // Use bitcoinjs-message to verify
+                const isValid = bitcoinMessage.verify(message, address, signature);
+                
+                if (isValid) {
+                    resultDiv.innerHTML = '<div class="result valid">✅ SIGNATURE VALID<br><small>This message was signed by Kim</small></div>';
+                } else {
+                    resultDiv.innerHTML = '<div class="result invalid">❌ SIGNATURE INVALID<br><small>This signature does not match</small></div>';
+                }
+            } catch (e) {
+                // Fallback: redirect to bitcoin.com
+                resultDiv.innerHTML = `<div class="result invalid">Verification error. <a href="https://www.bitcoin.com/tools/verify-message/" target="_blank" style="color:#fff">Try bitcoin.com →</a></div>`;
+            }
+        }
+    </script>
+</body>
+</html>
