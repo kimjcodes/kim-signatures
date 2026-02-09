@@ -53,9 +53,9 @@ Click verify. If it says ✅ — that's really me.
 
 ## Recent Signatures
 
-| Date | Short Sig | Link |
-|------|-----------|------|
-| 2026-02-09 | `IO/ZW...og9k=` | [View](by-YearMonth/2026-02/KimJBTC-2026-02-09.md) |
+| Date | Short Sig | Verify |
+|------|-----------|--------|
+| 2026-02-09 | `IO/ZW...og9k=` | [✅ Verify](https://kimjcodes.github.io/kim-signatures/verify.html?message=Kim%2026-02-09&sig=IO/ZW9UvT1ShTqLdUEeb7eQak2KU21zcEpp6UX9B5S0ENH4rinmA07LfoX3o4sOlabkDjXYJhNBb8kd/PcPog9k=) |
 
 ---
 
