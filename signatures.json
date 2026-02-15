@@ -7,7 +7,15 @@
       "message": "Kim 26-02-09",
       "signature": "IO/ZW9UvT1ShTqLdUEeb7eQak2KU21zcEpp6UX9B5S0ENH4rinmA07LfoX3o4sOlabkDjXYJhNBb8kd/PcPog9k=",
       "short": "IO/ZW...og9k=",
-      "platforms": ["skool", "twitter"]
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
     }
+  },
+  "26-02-15": {
+    "message": "Kim 26-02-15",
+    "address": "1LU67hyXTEZGg38PMvKo4q5sLJ13z3CVL1",
+    "signature": "H+uwiZeHOX21bEg7Gq+xIqaM/0eb86UGzPNnV6fuueTgBy1/KFJjFQk5KyqiMKvBpr0j+te/qv/EjZXh8lyyhuY="
   }
 }
