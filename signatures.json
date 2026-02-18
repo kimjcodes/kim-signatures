@@ -7,37 +7,54 @@
       "message": "Kim 26-02-09",
       "signature": "IO/ZW9UvT1ShTqLdUEeb7eQak2KU21zcEpp6UX9B5S0ENH4rinmA07LfoX3o4sOlabkDjXYJhNBb8kd/PcPog9k=",
       "short": "IO/ZW...og9k=",
-      "platforms": ["skool", "twitter"]
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
     },
     "2026-02-13": {
       "message": "Kim 26-02-13",
       "signature": "IKPHIWauX+tPSGuSmPy2AE2VKAtNfkS6Um3wbVMkUf4wWVXWCy7wjacz6Gigd98dY7nOhFoTYJJAdb3S7qQMdGk=",
       "short": "IKPHI...MdGk=",
-      "platforms": ["twitter"]
+      "platforms": [
+        "twitter"
+      ]
     },
     "2026-02-14": {
       "message": "Kim 26-02-14",
       "signature": "IGV5dA1uFy0k63v5R3cPQ3QQzMpdPyZBeAuvtmS2lkCwdGCNbTYho0aK5pv89AZLx3co5XqCieYC3W8Tf+ZT4Qo=",
       "short": "IGV5d...T4Qo=",
-      "platforms": ["skool", "twitter"]
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
     },
     "2026-02-15": {
       "message": "Kim 26-02-15",
       "signature": "H+uwiZeHOX21bEg7Gq+xIqaM/0eb86UGzPNnV6fuueTgBy1/KFJjFQk5KyqiMKvBpr0j+te/qv/EjZXh8lyyhuY=",
       "short": "H+uwi...yhuY=",
-      "platforms": ["twitter"]
+      "platforms": [
+        "twitter"
+      ]
     },
     "2026-02-16": {
       "message": "Kim 26-02-16",
       "signature": "IKdJ8GjSr9++P2tC50mCGei55sn8z6n5aLG2YwhVTxeMdIj71lHHAY91jwQf1EYxzF+yrExjbeW9DlK1wfyhmzY=",
       "short": "IKdJ8...hmzY=",
-      "platforms": ["skool", "twitter"]
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
     },
     "2026-02-17": {
       "message": "Kim 26-02-17",
       "signature": "Hz2cVrBuv2WRXXBy4W5zR5w/v661VC0JJ2BdPvXUxAsoPymqjN3+OtbpNiMNwflXw7aZq152awQKdx5MuieSO9s=",
       "short": "Hz2cV...SO9s=",
-      "platforms": ["skool", "twitter"]
-    }
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
+    },
+    "2026-02-18": "IF/x2XuMVH5uAl1un8piSH2WZrLlOTZXhOITRtLePALfXJCMO8p/4kvHTo6WMeYDzvzxMg3ovJaI3O6e+VfpYX4="
   }
 }
