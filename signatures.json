@@ -59,11 +59,17 @@
     "2026-02-20": {
       "message": "Kim 26-02-20",
       "signature": "IBMureHpeTk15oS5bFs7S8mb9iIMgaH9pbRhXFArp8r0HYenMLbSSVphP7vBo2WasxWhj6TGHK0DFIktrz6JFVE=",
-      "short": "IBMur...FVE=",
+      "short": "IBMur...JFVE=",
       "platforms": [
-        "twitter"
-      ],
-      "tweet": "https://x.com/KimJBTC/status/2024684911983284290"
+        "twitter",
+        "skool"
+      ]
+    },
+    "2026-02-21": {
+      "message": "Kim 26-02-21",
+      "signature": "IFmTh2CC3OUCVDDXIoWo88fOctMzyrP91om6AbgFPmUTCE+k8H2D49HbelU0Ra7qgwJ0wi+CMQLs5j5tDITJ3qA=",
+      "short": "IFmTh...J3qA=",
+      "platforms": []
     }
   }
 }
