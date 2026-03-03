@@ -1,0 +1,135 @@
+{
+  "signer": "KimJBTC",
+  "address": "1LU67hyXTEZGg38PMvKo4q5sLJ13z3CVL1",
+  "messageFormat": "Kim YY-MM-DD",
+  "signatures": {
+    "2026-02-09": {
+      "message": "Kim 26-02-09",
+      "signature": "IO/ZW9UvT1ShTqLdUEeb7eQak2KU21zcEpp6UX9B5S0ENH4rinmA07LfoX3o4sOlabkDjXYJhNBb8kd/PcPog9k=",
+      "short": "IO/ZW...og9k=",
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
+    },
+    "2026-02-13": {
+      "message": "Kim 26-02-13",
+      "signature": "IKPHIWauX+tPSGuSmPy2AE2VKAtNfkS6Um3wbVMkUf4wWVXWCy7wjacz6Gigd98dY7nOhFoTYJJAdb3S7qQMdGk=",
+      "short": "IKPHI...MdGk=",
+      "platforms": [
+        "twitter"
+      ]
+    },
+    "2026-02-14": {
+      "message": "Kim 26-02-14",
+      "signature": "IGV5dA1uFy0k63v5R3cPQ3QQzMpdPyZBeAuvtmS2lkCwdGCNbTYho0aK5pv89AZLx3co5XqCieYC3W8Tf+ZT4Qo=",
+      "short": "IGV5d...T4Qo=",
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
+    },
+    "2026-02-15": {
+      "message": "Kim 26-02-15",
+      "signature": "H+uwiZeHOX21bEg7Gq+xIqaM/0eb86UGzPNnV6fuueTgBy1/KFJjFQk5KyqiMKvBpr0j+te/qv/EjZXh8lyyhuY=",
+      "short": "H+uwi...yhuY=",
+      "platforms": [
+        "twitter"
+      ]
+    },
+    "2026-02-16": {
+      "message": "Kim 26-02-16",
+      "signature": "IKdJ8GjSr9++P2tC50mCGei55sn8z6n5aLG2YwhVTxeMdIj71lHHAY91jwQf1EYxzF+yrExjbeW9DlK1wfyhmzY=",
+      "short": "IKdJ8...hmzY=",
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
+    },
+    "2026-02-17": {
+      "message": "Kim 26-02-17",
+      "signature": "Hz2cVrBuv2WRXXBy4W5zR5w/v661VC0JJ2BdPvXUxAsoPymqjN3+OtbpNiMNwflXw7aZq152awQKdx5MuieSO9s=",
+      "short": "Hz2cV...SO9s=",
+      "platforms": [
+        "skool",
+        "twitter"
+      ]
+    },
+    "2026-02-18": "IF/x2XuMVH5uAl1un8piSH2WZrLlOTZXhOITRtLePALfXJCMO8p/4kvHTo6WMeYDzvzxMg3ovJaI3O6e+VfpYX4=",
+    "2026-02-20": {
+      "message": "Kim 26-02-20",
+      "signature": "IBMureHpeTk15oS5bFs7S8mb9iIMgaH9pbRhXFArp8r0HYenMLbSSVphP7vBo2WasxWhj6TGHK0DFIktrz6JFVE=",
+      "short": "IBMur...JFVE=",
+      "platforms": [
+        "twitter",
+        "skool"
+      ]
+    },
+    "2026-02-21": {
+      "message": "Kim 26-02-21",
+      "signature": "IFmTh2CC3OUCVDDXIoWo88fOctMzyrP91om6AbgFPmUTCE+k8H2D49HbelU0Ra7qgwJ0wi+CMQLs5j5tDITJ3qA=",
+      "short": "IFmTh...J3qA=",
+      "platforms": []
+    },
+    "2026-03-01": {
+      "message": "Kim 26-03-01",
+      "signature": "IOsCAJrzfs4TLCMnNwl3oYssiM54HEg22k7Dyq0FRwPjJdQzURk6xzQWGPhwqFQxZR51HRYDGbRKKExOLNTG1DM=",
+      "short": "IOsCA...G1DM=",
+      "platforms": []
+    },
+    "2026-02-22": {
+      "message": "Kim 26-02-22",
+      "signature": "H8NqWyikiRpA7Pqg7J+eqlp5lPyOw/5zvH/Tk8wlzGjta5uY7fBE9EIEr87xUVwU3KX3J7huR6jWHGlcfeHeLP0=",
+      "short": "H8NqW...eLP0=",
+      "platforms": []
+    },
+    "2026-02-23": {
+      "message": "Kim 26-02-23",
+      "signature": "IDhJN/+H8OHIF2uSfiPlrJLnXtzOuvLHI15fwxUtsAJDTquRq82MUuETtGGI69O8f+l5i+uVwni5RtOae73SIPY=",
+      "short": "IDhJN...SIPY=",
+      "platforms": []
+    },
+    "2026-02-24": {
+      "message": "Kim 26-02-24",
+      "signature": "H0G/FdbVQor5FHR6szEy/21bMMj3tpnoW2NxniuxSO/KHegVZfjqEQ30R5/lL+SPPbXP4JNdqBsGGXffOzWMorU=",
+      "short": "H0G/F...MorU=",
+      "platforms": []
+    },
+    "2026-02-25": {
+      "message": "Kim 26-02-25",
+      "signature": "H71aBi5ssY7czhShVB3kC/L+nFfpdUaOm7ZN2ZMRF7deZ2MFe1LF1yIt2jy1uZLcP8U68x2hzux9MyMh600YxOY=",
+      "short": "H71aB...YxOY=",
+      "platforms": []
+    },
+    "2026-02-26": {
+      "message": "Kim 26-02-26",
+      "signature": "IJJpkFAGx6GiPLLsKkzwUY6oLGOc3PAxgfmmdiN31G92Tx0t2g2VXgmSp725JkON8NqBKq4tYVA5sBwNnF3yh2Y=",
+      "short": "IJJpk...yh2Y=",
+      "platforms": []
+    },
+    "2026-02-27": {
+      "message": "Kim 26-02-27",
+      "signature": "IDt03cck+S67F69gciYPiEGSZX3TRqAbXwFOihOZeeWqT0kvwCcVyV0S4Lrt4cHO/sz3xSVuCv4TshKEPFlCatY=",
+      "short": "IDt03...CatY=",
+      "platforms": []
+    },
+    "2026-02-28": {
+      "message": "Kim 26-02-28",
+      "signature": "IM5CzZX5QXfHoEdZwMh10cPreDI7/FDocoj5FUNxGbu/KJCzjda/2/KEm6JriDapwW3FlSeAqYS1KYLJgHxX+MY=",
+      "short": "IM5Cz...X+MY=",
+      "platforms": []
+    },
+    "2026-03-04": {
+      "message": "Kim 26-03-04",
+      "signature": "H28aEeosFGDzMm1RWM9HvMD5sUA5q4LS8S/iIlzd23h8LR4xrWBn+SWXgNccjFnKcmCQEkInL3f5E2I5QjTV6AA=",
+      "short": "H28aE...V6AA=",
+      "platforms": []
+    },
+    "2026-03-05": {
+      "message": "Kim 26-03-05",
+      "signature": "H1DbINdO/39pen7cKzvjoQyk5bc8OH5yRAAxZRNyVPBqN8908b0/J1wp2tV5zNTjrFZ61ziEkx4EHJ9sJnGg5/o=",
+      "short": "H1DbI...g5/o=",
+      "platforms": []
+    }
+  }
+}
