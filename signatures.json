@@ -292,6 +292,12 @@
       "signature": "H46zqP+r0bTl7aP/+rUfnHrSojPcmz2/tUbTJvSbGfTiYLsuxSl7Rvl5u7Cxm21CAfalDB+WuwdZcT7BOJv/M9Y=",
       "short": "H46zq.../M9Y=",
       "platforms": []
+    },
+    "2026-04-01": {
+      "message": "Kim 26-04-01",
+      "signature": "H19randFIi7C0EzwkfGXMlm8fePlowiOvg4ewmFF0+9WClC3zedAqMevLQC0Ik3XOrVcj4e108K/BBlofO+4uAk=",
+      "short": "H19ra...4uAk=",
+      "platforms": []
     }
   }
 }
