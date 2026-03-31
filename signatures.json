@@ -282,6 +282,14 @@
       "platforms": [
         "github"
       ]
+    },
+    "2026-03-31": {
+      "message": "Kim 26-03-31",
+      "signature": "H46zqP+r0bTl7aP/+rUfnHrSojPcmz2/tUbTJvSbGfTiYLsuxSl7Rvl5u7Cxm21CAfalDB+WuwdZcT7BOJv/M9Y=",
+      "short": "H46zq...M9Y=",
+      "platforms": [
+        "github"
+      ]
     }
   }
 }
