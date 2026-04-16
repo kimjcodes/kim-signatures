@@ -1,6 +1,14 @@
 {
     "address": "1LU67hyXTEZGg38PMvKo4q5sLJ13z3CVL1",
     "signatures": {
+        "2026-04-16": {
+            "message": "Kim 26-04-16",
+            "signature": "H+0ftgVYbjARteYAW4GILlwyPHsBKeFA1P1p+ZtPki51L2Ox3bnwxQUDk4yz7KLMvSPoKI5fv5UFNEurwKEFxTs=",
+            "short": "H+0ft...FxTs=",
+            "platforms": [
+                "github"
+            ]
+        },
         "2026-02-09": {
             "message": "Kim 26-02-09",
             "signature": "IO/ZW9UvT1ShTqLdUEeb7eQak2KU21zcEpp6UX9B5S0ENH4rinmA07LfoX3o4sOlabkDjXYJhNBb8kd/PcPog9k=",
