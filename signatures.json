@@ -496,6 +496,14 @@
       "platforms": [
         "github"
       ]
+    },
+    "2026-04-20": {
+      "message": "Kim 26-04-20",
+      "signature": "H6PfFdBU8+mLBad+XzzRIsbeLJK44GTzzHMj6tgBTHQhQNjS2oE4vEOwZPqy56PfMOzmhYgOKt3FdklnY7Xb58A=",
+      "short": "H6PfF...b58A=",
+      "platforms": [
+        "github"
+      ]
     }
   }
 }
