@@ -517,7 +517,9 @@
       "message": "Kim 26-04-23",
       "signature": "IDOFhgAhlAkWbIREXiO4BMPcnTZVYZ/akaD00ZFPVhFBcFJJ95k06gBt3goPGjEmnW+hIvqIp7M5Ty2xYtowLN0=",
       "short": "IDOFh...wLN0=",
-      "platforms": []
+      "platforms": [
+        "github"
+      ]
     },
     "2026-04-24": {
       "message": "Kim 26-04-24",
