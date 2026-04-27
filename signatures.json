@@ -543,7 +543,9 @@
       "message": "Kim 26-04-27",
       "signature": "H3SkH4jd9l6ac0PN3QWl5QzIAwspyUIOON+YW18Epc5iT9ixIsOsiNxXspjTdljt9igb3IZAUKbsDDOQhRD4y8o=",
       "short": "H3SkH...4y8o=",
-      "platforms": []
+      "platforms": [
+        "github"
+      ]
     },
     "2026-04-28": {
       "message": "Kim 26-04-28",
