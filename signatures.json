@@ -821,7 +821,7 @@
       "message": "Kim 26-06-11",
       "signature": "IJh60lezWV+GmN3lE1+Q+a6cZeeMxKNR7zNVDTFXleaGehztSWl7dx4plNBttrkZNuLNiFlty/d1coEj1vUJNJw=",
       "short": "IJh60...JNJw=",
-      "platforms": []
+      "platforms": ["github"]
     }
   },
   "2026-05-06": {
