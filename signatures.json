@@ -821,7 +821,17 @@
       "message": "Kim 26-06-11",
       "signature": "IJh60lezWV+GmN3lE1+Q+a6cZeeMxKNR7zNVDTFXleaGehztSWl7dx4plNBttrkZNuLNiFlty/d1coEj1vUJNJw=",
       "short": "IJh60...JNJw=",
-      "platforms": ["github"]
+      "platforms": [
+        "github"
+      ]
+    },
+    "2026-06-12": {
+      "message": "Kim 26-06-12",
+      "signature": "H2DwCbDTuGp4ZPzwP651VilSiMsZGtNEws/aCH/UprGFHKGfNh1/UBt8qWvzi+NeSoLmriSVdcc99DAvFBkeaWM=",
+      "short": "H2DwC...eaWM=",
+      "platforms": [
+        "github"
+      ]
     }
   },
   "2026-05-06": {
