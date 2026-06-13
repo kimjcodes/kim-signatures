@@ -821,13 +821,21 @@
       "message": "Kim 26-06-11",
       "signature": "IJh60lezWV+GmN3lE1+Q+a6cZeeMxKNR7zNVDTFXleaGehztSWl7dx4plNBttrkZNuLNiFlty/d1coEj1vUJNJw=",
       "short": "IJh60...JNJw=",
+<<<<<<< HEAD
       "platforms": []
+=======
+      "platforms": [
+        "github"
+      ]
+>>>>>>> 85ceb4e9968f92a67d4f9ea76668c5737c6609da
     },
     "2026-06-12": {
       "message": "Kim 26-06-12",
       "signature": "H2DwCbDTuGp4ZPzwP651VilSiMsZGtNEws/aCH/UprGFHKGfNh1/UBt8qWvzi+NeSoLmriSVdcc99DAvFBkeaWM=",
       "short": "H2DwC...eaWM=",
-      "platforms": []
+      "platforms": [
+        "github"
+      ]
     },
     "2026-06-13": {
       "message": "Kim 26-06-13",
@@ -840,6 +848,7 @@
       "signature": "H3KkyYFMfm62kAebQYFsc+5GNtEY8gzRga9lSmcPGcfaPcvvui5r99jauXaZuXBoy/6ISTQBoQbX0wJtVaND/dY=",
       "short": "H3Kky...D/dY=",
       "platforms": []
+    }
     }
   },
   "2026-05-06": {
