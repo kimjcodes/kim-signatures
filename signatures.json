@@ -1134,6 +1134,12 @@
       "signature": "HxuKBZEPvnLrHb56aZjo7pavJHZ4N98ewTJJ11x2yo5+fq10HT8RuEZpvJ9n0KomFuWWjfH9f85e+0bGpSdoYZk=",
       "short": "HxuKB...oYZk=",
       "platforms": []
+    },
+    "2026-08-01": {
+      "message": "Kim 26-08-01",
+      "signature": "IC04LZGAw/QR769qH5CeJKlE+R1V1GDTKH2q9n7f9MPgKazr9i4LyMANTnRnfoCo/zBTrt7cHSMBvpvDMaiulZM=",
+      "short": "IC04L...ulZM=",
+      "platforms": []
     }
   }
 }
